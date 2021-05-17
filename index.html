@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- icon -->
+	<link rel="shortcut icon" href="img/logo_thong.ico">
+	<title>TRAN BA THONG Portfolio</title>
+	<!-- link extenal css/boostrap min css/ fontawesome  -->
+	<link rel="stylesheet" href="vendor/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+	<!-- font awesome all min css -->
+	<link rel="stylesheet" href="vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+	<link rel="stylesheet" href="css/Portfolio-template.css">
+	<!-- link extenal js/ popper.min.js/jquery.min.js/bootstrap.min.js-->
+	<script src="vendor/jquery-3.5.1.min.js"></script>
+	<script src="vendor/popper.min.js"></script>
+	<script src="vendor/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+	<script src="js/Portfolio-template.js"></script>
+	
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+	<main>
+		<!-- Home -->
+		<secction id="home">
+			<header>
+				<!-- class: navbar navbar-expand-lg navbar-light -->
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">
+							<img src="img/logo_thong.png" alt="">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<!-- 4 nút nhấn canh trái ml-auto -->
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#home">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">About</a>
+								</li>
+								<li class="nav-item ">
+									<a class="nav-link" href="#project">Project</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contact">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div class="home text-center">
+				<div class ="containter-fluid">
+					<h1>Hi,</h1>
+					<h2>I am <strong>TRAN BA THONG</strong> </h2>
+					<h2>WEB DEVELOPER</h2>
+				</div>
+				<a href="#about">
+					<button>Learn More</button>
+				</a>
+			</div>	
+		</secction>
+		<!-- About -->
+		<secction id="about">
+			<div class="about container text-center">
+				<h2>ABOUT</h2>
+				<div class="row">
+					<!-- thông tin cá nhân -->
+					<div class="col-md-6">
+						<div class="container-fluid ">
+							<p>Programming Languages</p>
+							<br>
+							<div  >
+								<div id="myProgress">
+								
+								<div style="width: 80%" id="myBar">
+									<h3>HTML</h3>
+								</div>
+							</div>
+							<br>
+							<div id="myProgress">
+								<div style="width: 70%" id="myBar">
+									<h3>CSS</h3>
+								</div>
+							</div>
+							<br>
+							<div id="myProgress">
+								<div style="width: 75%" id="myBar">
+									<h3>PHP</h3>
+								</div>
+							</div>
+							<br>
+							<div id="myProgress">
+								<div style="width: 70%" id="myBar">
+									<h3>JS/JQuery</h3>
+								</div>
+							</div>
+							<br>
+							<div id="myProgress">
+								<div style="width: 60%" id="myBar">
+									<h3>MVC/OOP</h3>
+								</div>
+							</div>
+							<br>
+							<div id="myProgress">
+								<div style="width: 70%" id="myBar">
+									<h3>SQL/MySQL</h3>
+								</div>
+							</div>
+							</div>
+							<br>
+							<a href="vendor/tranbathong_CV_web developer.pdf" download>
+								<button>Download CV</button>
+							</a>
+							
+						</div>
+					</div>
+					<!-- hình cá nhân -->
+					<div class="img col-sm-6">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</secction>
+		<!-- Project -->
+		<secction id="project">
+			<div class="project container-fluid text-center">
+				<h2>PROJECT</h2>
+				<!-- <p>These are my projects below:</p> -->
+				<div class="row ">
+					<div class=" col-md-6  container-fluid ">
+						<a href="http://qlsv.tranbathong.com/">
+							<img src="img/qlsv.JPG" alt="">
+							<p>Student Management Template</p>
+						</a>
+					</div>
+					<div class=" col-md-6 container-fluid">
+						<a href="http://bakeonetemplate.tranbathong.com/">
+							<img src="img/bake-one-template.JPG" alt="">
+							<p>Bake One Template</p>
+
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</secction>
+		<!-- contact -->
+		<secction id="contact">
+			<div class="contact container-fluid">
+				<h2 class="text-center">CONTACT</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<form method="POST" action="sendEmail.php">
+							<div class="row">
+								<!-- để canh vừa khung cho input/textaere thì sử udjng class="form-control" -->
+								<div class="col-md-6">
+									<input type="text" placeholder="your name" name="name" class="form-control">
+								</div>
+								<div class="col-md-6">
+									<input type="text" placeholder="your email" name="email" class="form-control">
+								</div>
+								<div class="col-md-12">
+									<textarea name="message" placeholder="message" class="form-control" id="" cols="30" rows="10"></textarea>
+								</div>
+								<div class="col-md-12 text-right">
+									<button type="submit">SUBMIT</button>
+								</div>
+								<div class="form-group col-sm-12">
+									<span class=message></span>
+								</div>
+							</div>
+						</form>					
+					</div>
+					<div class="col-md-6">
+						<h3>INFORMATION</h3>
+						<address class="d-flex">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>  Magistratsvägen 55 U 1303 <br>
+							22644 Lund, Sweden</p>
+						</address>
+						<address class="d-flex">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>  1979/8/6/42 Huynh Tan Phat Street <br>
+							Nha Be, Ho Chi Minh City, Viet Nam</p>
+						</address>
+						<p>
+							<i class="fas fa-phone-square"></i>
+							(+46) 709 542 269
+							 
+						</p>
+						<p>
+							<i class="far fa-envelope"></i>
+						tranbathong93@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</secction>
+	</main>
+	<footer>
+		<div class="footer container-fluid">
+			<p>© Copyright 2021</p>
+			<a href="#" class="backtotop">
+				<i class="fas fa-chevron-up"></i>
+			</a>
+		</div>
+
+	</footer>
+
+</body>
+
+</html>
